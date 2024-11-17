@@ -1,0 +1,6 @@
+.bgPg1{
+    background-image: url("../../assets/heroBg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 9rem;
+}

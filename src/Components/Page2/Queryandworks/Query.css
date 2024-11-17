@@ -1,0 +1,79 @@
+.logobig{
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.logobig img{
+    width: 10rem;
+    height: 9rem;
+}
+
+.calltoactionH{
+    width: 60%;
+    height: auto;
+}
+
+.calltoactionH h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 80px;
+    font-size: 4rem;
+    color: black;
+    text-align: center;
+    
+}
+
+.calltoactionp{
+    width: 50%;
+    height: auto;
+}
+
+.calltoactionp p{
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 400;
+    font-family: 'Satoshi', sans-serif;
+    line-height: 49px;
+}
+
+.calltoactionB{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.calltoactionB button{
+    border: none;
+    border-radius: 2rem;
+    background-color: rgba(44, 156, 240, 1);
+    color: black;
+    padding: 1rem 1rem;
+    font-weight: 700;
+}
+.loadingIcon{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 425px){
+    .calltoactionH{
+        width: 100%;
+    }
+    .calltoactionH h1{
+        font-size: 2.5rem;
+        text-align:start;
+    }
+    .calltoactionp{
+        width: 100%;
+    }
+    .calltoactionp p{
+        font-size: 2rem;
+        text-align: end;
+    }
+    .logobig img{
+        width: 8rem;
+        height: 7rem;
+    }
+}

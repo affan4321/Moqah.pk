@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
+import { useEffect, useRef } from 'react';
 import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import Page1 from "./Components/Page1/Page1";
+import Page2 from "./Components/Page2/Page2";
+import Page3 from "./Components/Page3/Page3";
+import Footer from "./Components/Footer/Footer";
+
 
 function App() {
+  const plansPricingRef = useRef(null);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Page1 plansPricingRef={plansPricingRef}/>
+    <Page2 />
+    <Page3 plansPricingRef={plansPricingRef}/>
+    <Footer />
+    </>
   );
 }
 

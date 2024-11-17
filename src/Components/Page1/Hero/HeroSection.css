@@ -1,0 +1,69 @@
+
+.mainHero{
+    text-align: center;
+    color: white;
+    margin-top: 5rem;
+    width: 75%;
+}
+
+.mainHero h1{
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 92.4px;
+}
+
+.sectiontextButton{
+    align-items: center;
+    width: 75%;
+}
+
+.sectiontextButton p{
+    color: rgba(255, 255, 255, 1);
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.sectiontextButton button{
+    display: flex;
+    margin: 2rem auto 1rem;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    background-color: rgba(44, 156, 240, 1);
+    color: white;
+    outline: 3px solid white;
+    border: none;
+    outline-offset: 2px;
+}
+
+.heroCards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 768px){
+    .mainHero{
+        width: 100%;
+    }
+    .mainHero h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .sectiontextButton{
+        width: 100%;
+    }
+    .sectiontextButton button{
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .heroCards{
+        flex-direction: column;
+        width: 5rem;
+        align-items: center;
+    }
+}

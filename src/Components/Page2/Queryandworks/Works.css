@@ -1,0 +1,47 @@
+.coroselContainer{
+    display: flex;
+    justify-content: center;
+    margin: 0 15rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: rgba(172, 172, 172, 0.2);
+    height: auto;
+}
+
+.corosel{
+    width: 150rem
+}
+
+.corosel img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 2rem 0;
+}
+
+.coroselButton{
+    display: flex;
+    justify-content: center;
+    margin: 0 15rem;
+    background-color: rgba(172, 172, 172, 0.2);
+    border-radius: 0 0 2rem 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.coroselButton button{
+    border: none;
+    border-radius: 2rem;
+    background-color: rgba(24, 125, 236, 0.13);
+    color: black;
+    padding: 0.7rem 3rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+@media screen and (max-width: 425px){
+    .coroselContainer, .corosel{
+        margin: 0 1rem;
+    }
+    .coroselButton {
+        margin: 0 auto;
+    }
+}
