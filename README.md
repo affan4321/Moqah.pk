@@ -1,4 +1,6 @@
-# "Moqah.pk" is a service that helps new Users to build a fully responsive web pages fast and efficiently!" 
+# "Moqah.pk" is a service that helps Users identify and manage "Events" so that they have full control of whatever events they are managing or looking forward to attend.
+- Users can list Events (FREE)
+- Users can search for various events occuring within different cities in Pakistan (FREE)
 
 ## How to run Project?
 - Clone it to your local Repository
