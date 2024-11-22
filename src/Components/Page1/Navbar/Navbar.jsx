@@ -1,12 +1,12 @@
 import React from 'react'
-import { useState, useRef, useEffect } from 'react'
+import { useState, useEffect } from 'react'
+import $ from 'jquery'
 import "../Navbar/Navbar.css"
 import Logo from "../../../assets/full logo.png"
 import menu from "../../../assets/menu.png"
 import close from "../../../assets/close.png"
 
 const Navbar = ({plansPricingRef}) => {
-
   const [showDatePicker, setShowDatePicker] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
 
@@ -34,10 +34,9 @@ const Navbar = ({plansPricingRef}) => {
   return (
     <>
     <div className="navContainer">
-
       <div className="container-fluid logo">
         <img src={Logo} alt="Logo" />
-        <h1 class="LogoText">MOQAH.PK</h1>
+        <h1 className="LogoText">MOQAH.PK</h1>
       </div>
 
       <div className="container-fluid linksButton">
@@ -45,7 +44,7 @@ const Navbar = ({plansPricingRef}) => {
           <li><a href='#'>Trending</a></li>
           <li><a href='#'>Categories</a></li>
           <li><a href='#'>Cities</a></li>
-          <li><a href='#' ref={plansPricingRef} onClick={handlePlansPricingClick}>Plans & Pricing</a></li>
+          <li><a href='#' onClick={handlePlansPricingClick}>Plans & Pricing</a></li>
         </ul>
         <div className="btns">
           <button type="button" className='signupBtn'>Sign Up</button>
@@ -58,7 +57,7 @@ const Navbar = ({plansPricingRef}) => {
           <li><a href='#'>Trending</a></li>
           <li><a href='#'>Categories</a></li>
           <li><a href='#'>Cities</a></li>
-          <li><a href='#' ref={plansPricingRef} onClick={handlePlansPricingClick}>Plans & Pricing</a></li>
+          <li><a href='#' onClick={handlePlansPricingClick}>Plans & Pricing</a></li>
         </ul>
         <div className="btns">
           <button type="button" className='signupBtn'>Sign Up</button>
@@ -88,14 +87,13 @@ const Navbar = ({plansPricingRef}) => {
                 <button type="button" className="dateTimeBtn" onClick={handleDateTimeButton}>
                   <span>Date</span>
                 </button>
-                <input type="date" id="datetime-picker" class="hidden-datetime" />
+                <input type="date" id="datetime-picker" className="hidden-datetime" />
                 </>
               )
             }
           </div>
           <button type="button" className='searchBtn'>Search</button>
         </div>
-        
       </div>
     </div>
     </>
