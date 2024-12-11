@@ -5,27 +5,28 @@
     border-radius: 2rem 2rem 0 0;
     background-color: rgba(172, 172, 172, 0.2);
     height: auto;
+    overflow: hidden;
 }
 
-.corosel{
-    width: 150rem
-}
+.mycorosel{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 150rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+} 
 
-.corosel img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    padding: 2rem 0;
-}
 
 .coroselButton{
     display: flex;
     justify-content: center;
     margin: 0 15rem;
     background-color: rgba(172, 172, 172, 0.2);
-    border-radius: 0 0 2rem 2rem;
     padding-bottom: 1.5rem;
+    border-radius: 0 0 2rem 2rem;
 }
+
 
 .coroselButton button{
     border: none;
@@ -37,8 +38,61 @@
     margin: 1rem 0;
 }
 
+.coroselButton button:hover{
+    background-color: rgba(172, 172, 172, 0.4);
+    box-shadow: #2c9cf0 0 0 10px;
+    transform: scale(1.1);
+    border: 2px solid #2c9cf0;
+    color: #2c9cf0;
+}   
+
+@media screen and (max-width: 4000px){
+    .coroselContainer, .mycorosel{
+        margin: 0 40rem;
+    }
+    .mycorosel{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .coroselButton {
+        margin: 0 40rem;
+    }
+    
+}
+
+@media screen and (max-width: 1920px){
+    .coroselContainer, .mycorosel{
+        margin: 0 15rem;
+    }
+    .mycorosel{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .coroselButton {
+        margin: 0 15rem;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .coroselContainer, .mycorosel{
+        margin: 0 5rem;
+    }
+    .mycorosel{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .coroselButton {
+        margin: 0 5rem;
+    }
+    
+}
+
+
+
+
 @media screen and (max-width: 425px){
-    .coroselContainer, .corosel{
+    .coroselContainer, .mycorosel{
         margin: 0 1rem;
     }
     .coroselButton {

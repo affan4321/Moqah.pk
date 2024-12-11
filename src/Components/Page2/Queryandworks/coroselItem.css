@@ -1,0 +1,20 @@
+.frame{
+    background-color: #cddbe9;
+    height: 11.5rem;
+    width: 18.3rem;
+    border-radius: 0.5rem 0.5rem;
+}
+
+.pic{
+    margin: 1rem 1rem 0 1rem;
+    width: 18rem;
+    height: 15rem;
+    
+}
+
+.pic img{
+    width: 90%;
+    height: 70%;
+    object-fit: cover;
+    /* margin: 1rem 1rem 0 1rem; */
+}

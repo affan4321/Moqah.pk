@@ -15,8 +15,9 @@
 }
 
 .step p{
-    
+    color: black;
     width: 100%;
+    text-align: left;
 }
 
 .numbers{
