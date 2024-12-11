@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d2a372a4fe4bd9cf02ab7bc46e117004",
+    "revision": "32509aede8b089aac85289c64f843761",
     "url": "/Moqah.pk/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Moqah.pk/static/css/2.b71989ea.chunk.css"
   },
   {
-    "revision": "5ca88e90e9860cfc7c11",
-    "url": "/Moqah.pk/static/css/main.2ad34fa7.chunk.css"
+    "revision": "2b4310c252481ed77cd7",
+    "url": "/Moqah.pk/static/css/main.4a1ec338.chunk.css"
   },
   {
     "revision": "0cfc70b801d27648a47d",
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Moqah.pk/static/js/3.390d5b0d.chunk.js"
   },
   {
-    "revision": "5ca88e90e9860cfc7c11",
-    "url": "/Moqah.pk/static/js/main.b35ba3ea.chunk.js"
+    "revision": "2b4310c252481ed77cd7",
+    "url": "/Moqah.pk/static/js/main.7102f1ec.chunk.js"
   },
   {
     "revision": "221a6033762463ae7a83",
