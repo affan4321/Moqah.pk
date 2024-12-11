@@ -1,16 +1,35 @@
 .row1, .row2, .row3 {
-    display: flex;
-    justify-content: flex-start;
-    gap: 1rem;
+    position: relative;
     width: 100%;
-    transition: transform 0.1s linear;
-    flex-wrap: nowrap;
     overflow: hidden;
-    white-space: nowrap;
+}
+
+.scroll-content {
+    display: flex;
+    gap: 1rem;
+    width: max-content;
+}
+
+.scroll-left .scroll-content {
+    animation: scrollLeft 20s linear infinite;
+}
+
+.scroll-right .scroll-content {
+    animation: scrollRight 20s linear infinite;
+}
+
+@keyframes scrollLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@keyframes scrollRight {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
 }
 
 .pic img {
-    width: 100%;
-    height: 100%;
+    width: 200px;  /* Fixed width for consistent scrolling */
+    height: 150px; /* Fixed height for consistent scrolling */
     object-fit: cover;
 }
